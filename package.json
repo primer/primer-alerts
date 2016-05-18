@@ -1,0 +1,25 @@
+{
+  "name": "primer-alerts",
+  "version": "0.1.0",
+  "description": "GitHub Primer - Alerts",
+  "homepage": "https://github.com/styleguide",
+  "license": "MIT",
+  "repository": "https://github.com/primer/alerts.git",
+  "main": "alerts.scss",
+  "bugs": {
+    "url": "https://github.com/primer/alerts/issues"
+  },
+  "author": "GitHub, Inc.",
+  "scripts": {
+    "test": "scss-lint *.scss"
+  },
+  "dependencies": {
+    "primer-support": "^0.2.0"
+  },
+  "keywords": [
+    "primer",
+    "css",
+    "github",
+    "primercss"
+  ]
+}
