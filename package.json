@@ -1,25 +1,42 @@
 {
-  "name": "primer-alerts",
   "version": "0.1.0",
-  "description": "GitHub Primer - Alerts",
-  "homepage": "https://github.com/styleguide",
+  "name": "primer-alerts",
+  "description": "Flash messages, or alerts, inform users of successful or pending actions.",
+  "homepage": "http://primercss.io/",
+  "author": "GitHub, Inc.",
   "license": "MIT",
+  "style": "index.scss",
+  "files": [
+    "index.scss",
+    "lib"
+  ],
   "repository": "https://github.com/primer/alerts.git",
-  "main": "alerts.scss",
   "bugs": {
     "url": "https://github.com/primer/alerts/issues"
   },
-  "author": "GitHub, Inc.",
   "scripts": {
-    "test": "scss-lint *.scss"
+    "build": "npm run setup && npm run preprocess",
+    "lint": "scss-lint **/*.scss",
+    "preprocess": "node-sass index.scss --include-path node_modules | postcss -c .postcss.json -o build/build.css",
+    "setup": "npm install",
+    "test": "npm run lint"
   },
   "dependencies": {
-    "primer-support": "^0.2.0"
+    "primer-support": "*"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.3.6",
+    "node-sass": "^3.7.0",
+    "postcss-cli": "^2.5.2"
   },
   "keywords": [
-    "primer",
+    "alerts",
+    "callouts",
     "css",
+    "flash",
     "github",
-    "primercss"
+    "primer",
+    "primercss",
+    "style"
   ]
 }

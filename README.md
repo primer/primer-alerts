@@ -1,30 +1,55 @@
-# Primer - Alerts
+# Primer CSS Alerts
 
-This is the repository for GitHub’s Primer alerts. It can be used as a module importable in larger projects. For the full primer library visit https://github.com/primer/primer
+[![NPM version](http://img.shields.io/npm/v/primer-alerts.svg)](https://www.npmjs.org/package/primer-alerts)
+[![Build Status](https://travis-ci.org/primer/alerts.svg?branch=master)](https://travis-ci.org/primer/alerts)
+
+> Flash messages, or alerts, inform users of successful or pending actions. Use them sparingly. Don’t show more than one at a time.
+
+This repository is a module of the full [primer-css][primer] repository.
+
+## Documentation
+
+You can read more about alerts in the [docs][docs].
 
 ## Install
 
-Install via `npm install --save primer-alerts`
+This repository is distributed with [npm][npm]. After [installing npm][install-npm], you can install `primer-alerts` with this command.
+
+```
+$ npm install --save primer-alerts
+```
 
 ## Usage
 
-Once you have the package installed, you can use it in your bundle by with an import line.
+The source files included are written in [Sass][sass] (`scss`) You can simply point your sass `include-path` at your `node_modules` directory and import it like this.
 
 ```scss
-@import "node_modules/primer-support/support";
-@import "node_modules/primer-alerts/alerts";
+@import "primer-alerts/index.scss";
 ```
 
-**Note:** This package requires [primer/support](https://github.com/primer/support) to compile. This will be installed when `npm install` is run. In order to compile you will need to import it above your import line.
+You can also import specific portions of the module by importing those partials from the `/lib/` folder. _Make sure you import any requirements along with the modules._
 
-For more info on the available utilities, visit our [Design systems docs](https://github.com/styleguide/css/modules/alerts)
+## Build
+
+For a compiled **css** version of this module, a npm script is included that will output a css version to `build/build.css`
+
+```
+$ npm run build
+```
 
 ## Related
 
-* [Primer - Support](https://github.com/primer/support)
-* [GitHub Design Systems](https://github.com/styleguide)
-* [Primer](https://github.com/primer)
+* [Primer Documentation][docs]
+* [primer-css][primer]
+* [primer-support][primer-support]
 
 ## License
 
 MIT &copy; [GitHub](https://github.com/)
+
+[primer]: https://github.com/primer/primer
+[primer-support]: https://github.com/primer/primer-support
+[docs]: http://primercss.io/
+[npm]: https://www.npmjs.com/
+[install-npm]: https://docs.npmjs.com/getting-started/installing-node
+[sass]: http://sass-lang.com/
