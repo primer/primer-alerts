@@ -32,7 +32,7 @@
   // Undo `<button>` styles
   background: none;
   border: 0;
-  -webkit-appearance: none;
+  appearance: none;
   opacity: 0.6;
 
   &:hover {
@@ -46,7 +46,6 @@
   margin-top: -4px;
   margin-left: 20px;
 }
-
 
 //
 // Variations
