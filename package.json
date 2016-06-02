@@ -1,5 +1,5 @@
 {
-  "version": "0.2.5",
+  "version": "0.2.6",
   "name": "primer-alerts",
   "description": "Flash messages, or alerts, inform users of successful or pending actions.",
   "homepage": "http://primercss.io/",
@@ -8,7 +8,8 @@
   "style": "index.scss",
   "files": [
     "index.scss",
-    "lib"
+    "lib",
+    "build"
   ],
   "repository": "https://github.com/primer/alerts.git",
   "bugs": {
