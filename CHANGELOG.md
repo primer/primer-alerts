@@ -1,3 +1,7 @@
+# v0.2.5
+
+ * skipping cleanup - Jon Rohan [github/github@d6b3678](https://github.com/github/github/commit/d6b3678)
+
 # v0.2.4
 
  * Bump version, and including build/build.css in npm package - Jon Rohan [github/github@09cb3a3](https://github.com/github/github/commit/09cb3a3)
