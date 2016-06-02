@@ -7,10 +7,6 @@
 
 This repository is a module of the full [primer-css][primer] repository.
 
-## Documentation
-
-You can read more about alerts in the [docs][docs].
-
 ## Install
 
 This repository is distributed with [npm][npm]. After [installing npm][install-npm], you can install `primer-alerts` with this command.
@@ -37,18 +33,91 @@ For a compiled **css** version of this module, a npm script is included that wil
 $ npm run build
 ```
 
-## Related
+## Documentation
 
-* [Primer Documentation][docs]
-* [primer-css][primer]
-* [primer-support][primer-support]
+You can read more about other primer modules in the [full primer docs][docs].
+
+<!-- %docs
+title: Alerts
+-->
+
+### Alerts
+
+Flash messages, or alerts, inform users of successful or pending actions. Use them sparingly. Don't show more than one at a time.
+
+#### Default
+
+Flash messages start off looking decently neutral—they're just light blue rounded rectangles.
+
+```html
+<div class="flash">
+  Flash message goes here.
+</div>
+```
+
+You can put multiple paragraphs of text in a flash message—the last paragraph's bottom `margin` will be automatically override.
+
+```html
+<div class="flash">
+  <p>This is a longer flash message in it's own paragraph. It ends up looking something like this. If we keep adding more text, it'll eventually wrap to a new line.</p>
+  <p>And this is another paragraph.</p>
+</div>
+```
+
+Should the need arise, you can quickly space out your flash message from surrounding content with a `.flash-messages` wrapper. *Note the extra top and bottom margin in the example below.*
+
+```html
+<div class="flash-messages">
+  <div class="flash">
+    Flash message goes here.
+  </div>
+</div>
+```
+
+#### Variations
+
+Add `.flash-warn` or `.flash-error` to the flash message to make it yellow or red, respectively.
+
+```html
+<div class="flash flash-warn">
+  Flash message goes here.
+</div>
+```
+
+```html
+<div class="flash flash-error">
+  Flash message goes here.
+</div>
+```
+
+#### With icon
+
+Add an icon to the left of the flash message to give it some funky fresh attention. Just add `.flash-with-icon` and your Octicon.
+
+```html
+<div class="flash flash-with-icon">
+  <%= octicon :symbol => "alert" %>
+  Flash message with an icon goes here.
+</div>
+```
+
+#### Dismiss
+
+Add a JavaScript enabled (via Crema) dismiss (close) icon on the right of any flash message.
+
+```html
+<div class="flash">
+  <button class="flash-close js-flash-close"><%= octicon :symbol => "x" %></button>
+  Dismissable flash message goes here.
+</div>
+```
+<!-- %enddocs -->
 
 ## License
 
-MIT &copy; [GitHub](https://github.com/)
+[MIT](./LICENSE) &copy; [GitHub](https://github.com/)
 
 [primer]: https://github.com/primer/primer
-[primer-support]: https://github.com/primer/primer-support
 [docs]: http://primercss.io/
 [npm]: https://www.npmjs.com/
 [install-npm]: https://docs.npmjs.com/getting-started/installing-node
