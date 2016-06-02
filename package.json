@@ -1,5 +1,5 @@
 {
-  "version": "0.2.1",
+  "version": "0.2.4",
   "name": "primer-alerts",
   "description": "Flash messages, or alerts, inform users of successful or pending actions.",
   "homepage": "http://primercss.io/",
@@ -15,11 +15,10 @@
     "url": "https://github.com/primer/alerts/issues"
   },
   "scripts": {
-    "build": "npm run setup && npm run preprocess",
-    "lint": "stylelint **/*.scss -c .stylelintrc.json -s scss",
-    "preprocess": "node-sass index.scss --include-path node_modules | postcss -c .postcss.json -o build/build.css",
-    "setup": "npm install",
-    "test": "npm run lint"
+    "setup": "if [ ! -d \"node_modules\" ]; then npm install; fi",
+    "build": "node-sass index.scss --include-path node_modules --output-style compressed | postcss -c .postcss.json -o build/build.css",
+    "prepublish": "npm run setup && npm run build",
+    "test": "stylelint **/*.scss -c .stylelintrc.json -s scss"
   },
   "dependencies": {
     "primer-support": "*"
