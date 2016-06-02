@@ -1,3 +1,7 @@
+# HEAD
+
+ * Mentioning the build file - Jon Rohan [github/github@64ca4a7](https://github.com/github/github/commit/64ca4a7)
+
 # v0.2.6
 
  * Including build in files - Jon Rohan [github/github@817ee23](https://github.com/github/github/commit/817ee23)
