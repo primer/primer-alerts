@@ -1,3 +1,7 @@
+# v0.2.6
+
+ * Including build in files - Jon Rohan [github/github@817ee23](https://github.com/github/github/commit/817ee23)
+
 # v0.2.5
 
  * skipping cleanup - Jon Rohan [github/github@d6b3678](https://github.com/github/github/commit/d6b3678)
