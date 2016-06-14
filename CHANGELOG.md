@@ -1,5 +1,6 @@
 # HEAD
 
+ * Lots of refactoring and tests written - Jon Rohan [github/github@6e3ac10](https://github.com/github/github/commit/6e3ac10)
  * Removing some unnecessary lint plugins and using native - Jon Rohan [github/github@2ae0070](https://github.com/github/github/commit/2ae0070)
  * including no-utility lint plugin - Jon Rohan [github/github@5cb86ed](https://github.com/github/github/commit/5cb86ed)
  * Adding lint plugins for new config - Jon Rohan [github/github@7fb9613](https://github.com/github/github/commit/7fb9613)
