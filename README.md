@@ -97,7 +97,7 @@ Add an icon to the left of the flash message to give it some funky fresh attenti
 
 ```html
 <div class="flash flash-with-icon">
-  <%= octicon :symbol => "alert" %>
+  <%= octicon "alert" %>
   Flash message with an icon goes here.
 </div>
 ```
@@ -108,7 +108,7 @@ Add a JavaScript enabled (via Crema) dismiss (close) icon on the right of any fl
 
 ```html
 <div class="flash">
-  <button class="flash-close js-flash-close"><%= octicon :symbol => "x" %></button>
+  <button class="flash-close js-flash-close"><%= octicon "x" %></button>
   Dismissable flash message goes here.
 </div>
 ```
