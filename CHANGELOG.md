@@ -1,5 +1,6 @@
-# HEAD
+# v0.3.0
 
+ * Publishing a new version - Jon Rohan [github/github@eed0e96](https://github.com/github/github/commit/eed0e96)
  * Updating octicons to deprecate the use of :symbol - Jon Rohan [github/github@9eb0c63](https://github.com/github/github/commit/9eb0c63)
  * Lots of refactoring and tests written - Jon Rohan [github/github@6e3ac10](https://github.com/github/github/commit/6e3ac10)
  * Removing some unnecessary lint plugins and using native - Jon Rohan [github/github@2ae0070](https://github.com/github/github/commit/2ae0070)
