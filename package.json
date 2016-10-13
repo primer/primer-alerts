@@ -11,9 +11,9 @@
     "lib",
     "build"
   ],
-  "repository": "https://github.com/primer/alerts.git",
+  "repository": "https://github.com/primer/primer-alerts.git",
   "bugs": {
-    "url": "https://github.com/primer/alerts/issues"
+    "url": "https://github.com/primer/primer-alerts/issues"
   },
   "scripts": {
     "setup": "if [ ! -d \"node_modules\" ]; then npm install; fi",
