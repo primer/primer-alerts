@@ -35,15 +35,10 @@ $ npm run build
 
 ## Documentation
 
-You can read more about other primer modules in the [full primer docs][docs].
-
 <!-- %docs
 title: Alerts
-homepage: https://github.com/primer/primer-alerts
 status: Stable
 -->
-
-### Alerts
 
 Flash messages, or alerts, inform users of successful or pending actions. Use them sparingly. Don't show more than one at a time.
 
