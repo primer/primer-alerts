@@ -1,3 +1,7 @@
+# HEAD
+
+ * Some updates based on feedback - Jon Rohan [github/github@8a4919d](https://github.com/github/github/commit/8a4919d)
+
 # v0.4.0
 
  * Cutting new versions of primer modules - Jon Rohan [github/github@157f5ab](https://github.com/github/github/commit/157f5ab)
