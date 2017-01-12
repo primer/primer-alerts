@@ -2,9 +2,7 @@
 // stylelint-disable selector-no-type
 .flash {
   position: relative;
-  padding: 15px;
-  font-size: 14px;
-  line-height: 1.5;
+  padding: $spacer-3;
   color: $flash-text-blue;
   background-color: $flash-bg-blue;
   border: 1px solid $flash-border-blue;
@@ -17,16 +15,14 @@
 
 // Contain the flash messages
 .flash-messages {
-  margin-bottom: 20px;
+  margin-bottom: $spacer-4;
 }
 
 // Close button
 .flash-close {
   float: right;
-  width: 34px;
-  height: 44px;
-  margin: -11px;
-  line-height: 40px;
+  padding: $spacer-3;
+  margin: -$spacer-3;
   color: inherit;
   text-align: center;
   cursor: pointer;
@@ -44,8 +40,8 @@
 // Action button
 .flash-action {
   float: right;
-  margin-top: -4px;
-  margin-left: 20px;
+  margin-top: -3px;
+  margin-left: $spacer-4;
 }
 
 //
@@ -64,31 +60,16 @@
   border-color: $flash-border-red;
 }
 
+.flash-success {
+  color: $flash-text-green;
+  background-color: $flash-bg-green;
+  border-color: $flash-border-green;
+}
+
 .flash-full {
   margin-top: -1px;
   border-width: 1px 0;
   border-radius: 0;
-}
-
-.flash-with-icon {
-  .container {
-    padding-left: 40px;
-  }
-
-  .flash-icon {
-    float: left;
-    margin-top: 3px;
-    margin-left: -25px;
-  }
-}
-
-// Content within
-//
-// Reset margins on headings and paragraphs within alerts.
-.flash-content {
-  margin-top: 0;
-  margin-bottom: 0;
-  line-height: 1.5;
 }
 
 .warning {

@@ -42,7 +42,7 @@ status: Stable
 
 Flash messages, or alerts, inform users of successful or pending actions. Use them sparingly. Don't show more than one at a time.
 
-#### Default
+## Default
 
 Flash messages start off looking decently neutral—they're just light blue rounded rectangles.
 
@@ -71,9 +71,9 @@ Should the need arise, you can quickly space out your flash message from surroun
 </div>
 ```
 
-#### Variations
+## Variations
 
-Add `.flash-warn` or `.flash-error` to the flash message to make it yellow or red, respectively.
+Add `.flash-warn`, `.flash-error`, or `.flash-success` to the flash message to make it yellow, red, or green, respectively.
 
 ```html
 <div class="flash flash-warn">
@@ -87,18 +87,24 @@ Add `.flash-warn` or `.flash-error` to the flash message to make it yellow or re
 </div>
 ```
 
-#### With icon
+```html
+<div class="flash flash-success">
+  Flash message goes here.
+</div>
+```
 
-Add an icon to the left of the flash message to give it some funky fresh attention. Just add `.flash-with-icon` and your Octicon.
+## With icon
+
+Add an icon to the left of the flash message to give it some funky fresh attention.
 
 ```html
-<div class="flash flash-with-icon">
+<div class="flash">
   <%= octicon "alert" %>
   Flash message with an icon goes here.
 </div>
 ```
 
-#### Dismiss
+## With dismiss
 
 Add a JavaScript enabled (via Crema) dismiss (close) icon on the right of any flash message.
 
@@ -108,6 +114,30 @@ Add a JavaScript enabled (via Crema) dismiss (close) icon on the right of any fl
   Dismissable flash message goes here.
 </div>
 ```
+
+## With action button
+
+A flash message with an action button.
+
+```html
+<div class="flash">
+  <button type="submit" class="btn btn-sm primary flash-action">Complete action</button>
+  Flash message with action here.
+</div>
+```
+
+## Full width flash
+
+A flash message that is full width and removes border and border radius.
+
+```html
+<div class="flash flash-full">
+  <div class="container">
+    Full width flash message.
+  </div>
+</div>
+```
+
 <!-- %enddocs -->
 
 ## License
