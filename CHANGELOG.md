@@ -1,5 +1,6 @@
-# HEAD
+# v1.0.0
 
+ * updating versions after running version script - broccolini [github/github@61b8c6f](https://github.com/github/github/commit/61b8c6f)
  * Some updates based on feedback - Jon Rohan [github/github@8a4919d](https://github.com/github/github/commit/8a4919d)
 
 # v0.4.0
